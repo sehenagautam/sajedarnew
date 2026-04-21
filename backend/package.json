@@ -1,0 +1,19 @@
+{
+  "name": "@sajedar-ai-news/backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --ignore data --ignore uploads --ignore ../frontend/dist --ignore ../frontend/public/logo-transparent.png server/index.js",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "morgan": "^1.10.1",
+    "multer": "^2.0.2",
+    "nodemon": "^3.1.10",
+    "slugify": "^1.6.6"
+  }
+}

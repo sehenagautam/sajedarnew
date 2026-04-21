@@ -1,0 +1,22 @@
+{
+  "name": "sajedar-ai-news",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace backend\" \"npm run dev --workspace frontend\"",
+    "dev:frontend": "npm run dev --workspace frontend",
+    "dev:backend": "npm run dev --workspace backend",
+    "build": "npm run build --workspace frontend",
+    "start": "npm run start --workspace backend",
+    "clean:logo": "npm run clean:logo --workspace frontend"
+  },
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "devDependencies": {}
+}
